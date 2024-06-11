@@ -101,5 +101,19 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 ```
 npx create-react-app employee-polls
 cd employee-polls
-npm i @reduxjs/toolkit react-router-dom react-redux
+npm i @reduxjs/toolkit react-router-dom react-hook-form react-redux react-redux-loading-bar yup @hookform/resolvers
+```
+
+Install NextUI
+
+```
+npm i @nextui-org/react framer-motion
+npm i -D tailwindcss
+npx tailwindcss init
+```
+
+ESLint
+
+```
+npm install -g eslint
 ```
