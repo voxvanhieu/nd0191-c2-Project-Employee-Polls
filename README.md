@@ -117,3 +117,9 @@ ESLint
 ```
 npm install -g eslint
 ```
+
+Other package
+
+```
+npm i @react-stately/data
+```

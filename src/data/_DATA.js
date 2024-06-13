@@ -3,7 +3,7 @@ let users = {
     id: 'sarahedo',
     password: 'password123',
     name: 'Sarah Edo',
-    avatarURL: 'https://picsum.photos/seed/picsum/50/50',
+    avatarURL: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
     answers: {
       "8xf0y6ziyjabvozdd253nd": 'optionOne',
       "6ni6ok3ym7mf1p33lnez": 'optionOne',
@@ -16,7 +16,7 @@ let users = {
     id: 'tylermcginnis',
     password: 'abc321',
     name: 'Tyler McGinnis',
-    avatarURL: 'https://picsum.photos/seed/picsum/50/50',
+    avatarURL: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
     answers: {
       "vthrdm985a262al8qx3do": 'optionOne',
       "xj352vofupe1dqz9emx13r": 'optionTwo',
@@ -27,7 +27,7 @@ let users = {
     id: 'mtsamis',
     password: 'xyz123',
     name: 'Mike Tsamis',
-    avatarURL: 'https://picsum.photos/seed/picsum/50/50',
+    avatarURL: 'https://i.pravatar.cc/150?u=a092581d4ef9026700d',
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',
@@ -39,7 +39,7 @@ let users = {
     id: 'zoshikanlu',
     password: 'pass246',
     name: 'Zenobia Oshikanlu',
-    avatarURL: 'https://picsum.photos/seed/picsum/50/50',
+    avatarURL: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
     },
@@ -218,7 +218,7 @@ export function _getUserByUsername(username) {
     if (user) {
       user = {
         ...user,
-        password: null
+        password: undefined
       }
     }
     setTimeout(() => resolve({ ...user }), 1000)
@@ -232,7 +232,9 @@ export function authenticateUser({ username, password }) {
     if (user && user.password === password) {
       outUser = {
         ...user,
-        password: null
+        password: undefined,
+        answers: undefined,
+        questions: undefined
       }
     }
     setTimeout(() => resolve({ ...outUser }), 1000)

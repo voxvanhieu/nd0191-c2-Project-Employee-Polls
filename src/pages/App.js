@@ -1,4 +1,5 @@
 // Libs
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { NextUIProvider } from "@nextui-org/react";
@@ -13,7 +14,8 @@ import {
 
 // Store
 import { authSelectors } from "../data/store";
-import { pollActions, pollSelectors } from "../data/store/poll.slice";
+import { userActions } from "../data/store";
+import { pollActions } from "../data/store";
 
 // Pages
 import { Dashboard } from "./Dashboard";
@@ -21,9 +23,9 @@ import { Login } from './account'
 import { NotFound } from "./NotFound"
 import { TestPage } from "./TestPage";
 import { About } from "./About";
-import { useEffect } from "react";
+import { Leaderboard } from "./Leaderboard";
+import { QuestionDetails } from "./QuestionDetails";
 
-import * as API from '../data/api';
 const App = (props) => {
 
   // init custom history object to allow navigation from 
@@ -33,17 +35,14 @@ const App = (props) => {
 
   const dispatch = useDispatch();
   const auth = useSelector(authSelectors.selectValue);
-  // const poll = useSelector(pollSelectors.selectValue);
-  // const user = useSelector(userSelector);
 
   useEffect(() => {
     if (!auth) {
       return;
     }
-
-    dispatch(pollActions.getQuestionsAsync());
-    // dispatch(userActions.getUsersAsync());
-  }, []);
+    dispatch(pollActions.getQuestions());
+    dispatch(userActions.getUsers());
+  }, [auth, dispatch]);
 
   return (
     <NextUIProvider navigate={history.navigate}>
@@ -55,8 +54,12 @@ const App = (props) => {
           <Route path="/test" element={<TestPage />} />
           <Route element={<PrivateRoute />}>
             <Route path="/" element={<Dashboard />} />
-            {/* 
             <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route
+              path="/questions/:question"
+              element={(<QuestionDetails />)}
+            />
+            {/*
             <Route path="/add" element={<NewPoll />} />
             <Route path="/questions/:id" element={<Poll />} />
             */}

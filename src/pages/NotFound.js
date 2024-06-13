@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '../components/Container';
 
 const NotFound = () => {
     const navigate = useNavigate();

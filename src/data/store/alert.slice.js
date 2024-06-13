@@ -35,7 +35,6 @@ function createReducers() {
             message: action.payload?.message || action.payload,
             showAfterRedirect: action.payload?.showAfterRedirect
         };
-        console.log(action.payload)
     }
 
     function error(state, action) {
@@ -44,7 +43,6 @@ function createReducers() {
             message: action.payload?.message || action.payload,
             showAfterRedirect: action.payload?.showAfterRedirect
         };
-        console.log(action.payload)
     }
 
     function clear(state) {
