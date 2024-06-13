@@ -5,7 +5,7 @@ export { PollList };
 
 function PollList({ items }) {
 
-    if (!items || items.length == 0) {
+    if (!items || items.length === 0) {
         return (
             <div className="w-full text-center">
                 <h3>No data</h3>

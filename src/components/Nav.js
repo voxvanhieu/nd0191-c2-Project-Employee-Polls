@@ -5,8 +5,7 @@ import {
     NavbarBrand,
     NavbarContent,
     NavbarItem,
-    Link,
-    Button
+    Link
 } from "@nextui-org/react";
 
 import { history } from "../helpers";

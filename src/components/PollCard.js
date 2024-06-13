@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {
     Card,
     CardHeader,
@@ -11,7 +11,7 @@ import {
     Tooltip
 } from "@nextui-org/react";
 import { useSelector } from 'react-redux';
-import { authSelectors, pollSelectors, userActions, userSelectors } from '../data/store';
+import { authSelectors, pollSelectors, userSelectors } from '../data/store';
 import { useNavigate, generatePath } from "react-router-dom";
 
 export { PollCard };

@@ -2,16 +2,16 @@ import React from 'react';
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { render } from '@testing-library/react';
-import App from './App';
 import { store } from '../data/store';
+import { Dashboard } from './Dashboard';
 
-describe('App snapshot test', () => {
+describe('Dashboard snapshot test', () => {
   it('will match snapshot', () => {
     let component = render(
       <React.StrictMode>
         <Provider store={store}>
           <BrowserRouter>
-            <App />
+            <Dashboard />
           </BrowserRouter>
         </Provider>
       </React.StrictMode>

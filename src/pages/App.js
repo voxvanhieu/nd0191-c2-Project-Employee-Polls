@@ -21,7 +21,6 @@ import { pollActions } from "../data/store";
 import { Dashboard } from "./Dashboard";
 import { Login } from './account'
 import { NotFound } from "./NotFound"
-import { TestPage } from "./TestPage";
 import { About } from "./About";
 import { Leaderboard } from "./Leaderboard";
 import { QuestionDetails } from "./QuestionDetails";
@@ -52,7 +51,6 @@ const App = (props) => {
         <Alert />
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/test" element={<TestPage />} />
           <Route element={<PrivateRoute />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/leaderboard" element={<Leaderboard />} />

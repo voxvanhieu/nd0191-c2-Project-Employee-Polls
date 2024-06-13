@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useLocation } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {
     NavbarItem,
     Link,

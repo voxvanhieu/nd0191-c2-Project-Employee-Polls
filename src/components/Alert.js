@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
 import { alertActions } from '../data/store';
+import { Button } from '@nextui-org/react';
 
 export { Alert };
 
@@ -20,11 +21,11 @@ function Alert() {
     if (!alert) return null;
 
     return (
-        <div className="container">
-            <div className="m-3">
-                <div className={`alert alert-dismissible ${alert.type}`}>
-                    {alert.message}
-                    <button type="button" className="btn-close" onClick={() => dispatch(alertActions.clear())}></button>
+        <div className="container w-full h-fit bg-warning">
+            <div className="m-3 p-3">
+                <div className={`flex flex-row justify-between items-center alert alert-dismissible ${alert.type}`}>
+                    <p data-testid="lblAlert" className="text-danger">{alert.message}</p>
+                    <Button className="btn-close" onClick={() => dispatch(alertActions.clear())}>Close Alert</Button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot test will match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        data-overlay-container="true"
+      >
+        <div
+          class="dark text-foreground bg-background"
+        >
+          <nav
+            class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70"
+            style="--navbar-height: 4rem;"
+          >
+            <header
+              class="z-40 flex px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]"
+            >
+              <div
+                class="flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border"
+              >
+                <p
+                  class="font-bold text-inherit"
+                >
+                  Employee Polls
+                </p>
+              </div>
+              <ul
+                class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex gap-4"
+                data-justify="center"
+              >
+                <li
+                  class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+                >
+                  <a
+                    class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                    href="/"
+                    role="link"
+                    tabindex="0"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+                >
+                  <a
+                    class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                    href="/leaderboard"
+                    role="link"
+                    tabindex="0"
+                  >
+                    Leaderboard
+                  </a>
+                </li>
+                <li
+                  class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+                >
+                  <a
+                    class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                    href="/add"
+                    role="link"
+                    tabindex="0"
+                  >
+                    New
+                  </a>
+                </li>
+                <li
+                  class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+                >
+                  <a
+                    class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                    href="/about"
+                    role="link"
+                    tabindex="0"
+                  >
+                    About
+                  </a>
+                </li>
+              </ul>
+              <ul
+                class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0"
+                data-justify="end"
+              />
+            </header>
+          </nav>
+          <div
+            class="container mx-auto"
+          >
+            <div
+              class="flex flex-col items-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+            >
+              <a
+                class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+                href="#"
+              >
+                <img
+                  alt="logo"
+                  class="w-8 h-8 mr-2"
+                  src="uda-ico.svg"
+                />
+                Udacity Employee Poll
+              </a>
+              <div
+                class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+              >
+                <div
+                  class="p-6 space-y-4 md:space-y-6 sm:p-8"
+                >
+                  <h1
+                    class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white"
+                  >
+                    Sign in to your account
+                  </h1>
+                  <form
+                    class="space-y-4 md:space-y-6"
+                  >
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        data-testid="lblUsername"
+                        for="username"
+                      >
+                        User Name
+                      </label>
+                      <input
+                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        data-testid="inpUsername"
+                        name="username"
+                        placeholder="employee_account"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        data-testid="lblPassword"
+                        for="password"
+                      >
+                        Password
+                      </label>
+                      <input
+                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        data-testid="inpPassword"
+                        name="password"
+                        placeholder="••••••••"
+                        type="password"
+                      />
+                    </div>
+                    <div
+                      class="flex items-center justify-between"
+                    >
+                      <div
+                        class="flex items-start"
+                      >
+                        <div
+                          class="flex items-center h-5"
+                        >
+                          <input
+                            aria-describedby="remember"
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                            id="remember"
+                            type="checkbox"
+                          />
+                        </div>
+                        <div
+                          class="ml-3 text-sm"
+                        >
+                          <label
+                            class="text-gray-500 dark:text-gray-300"
+                            for="remember"
+                          >
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <a
+                        class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
+                        href="/forgot"
+                      >
+                        Forgot password?
+                      </a>
+                    </div>
+                    <button
+                      class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      data-testid="btnSubmit"
+                      type="submit"
+                    >
+                      Sign in
+                    </button>
+                    <p
+                      class="text-sm font-light text-gray-500 dark:text-gray-400"
+                    >
+                      Don't have an account yet? 
+                      <a
+                        class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                        href="/register"
+                      >
+                        Sign up
+                      </a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      data-overlay-container="true"
+    >
+      <div
+        class="dark text-foreground bg-background"
+      >
+        <nav
+          class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70"
+          style="--navbar-height: 4rem;"
+        >
+          <header
+            class="z-40 flex px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]"
+          >
+            <div
+              class="flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border"
+            >
+              <p
+                class="font-bold text-inherit"
+              >
+                Employee Polls
+              </p>
+            </div>
+            <ul
+              class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex gap-4"
+              data-justify="center"
+            >
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/"
+                  role="link"
+                  tabindex="0"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/leaderboard"
+                  role="link"
+                  tabindex="0"
+                >
+                  Leaderboard
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/add"
+                  role="link"
+                  tabindex="0"
+                >
+                  New
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/about"
+                  role="link"
+                  tabindex="0"
+                >
+                  About
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0"
+              data-justify="end"
+            />
+          </header>
+        </nav>
+        <div
+          class="container mx-auto"
+        >
+          <div
+            class="flex flex-col items-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+          >
+            <a
+              class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+              href="#"
+            >
+              <img
+                alt="logo"
+                class="w-8 h-8 mr-2"
+                src="uda-ico.svg"
+              />
+              Udacity Employee Poll
+            </a>
+            <div
+              class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div
+                class="p-6 space-y-4 md:space-y-6 sm:p-8"
+              >
+                <h1
+                  class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white"
+                >
+                  Sign in to your account
+                </h1>
+                <form
+                  class="space-y-4 md:space-y-6"
+                >
+                  <div>
+                    <label
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      data-testid="lblUsername"
+                      for="username"
+                    >
+                      User Name
+                    </label>
+                    <input
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      data-testid="inpUsername"
+                      name="username"
+                      placeholder="employee_account"
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      data-testid="lblPassword"
+                      for="password"
+                    >
+                      Password
+                    </label>
+                    <input
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      data-testid="inpPassword"
+                      name="password"
+                      placeholder="••••••••"
+                      type="password"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-between"
+                  >
+                    <div
+                      class="flex items-start"
+                    >
+                      <div
+                        class="flex items-center h-5"
+                      >
+                        <input
+                          aria-describedby="remember"
+                          class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                          id="remember"
+                          type="checkbox"
+                        />
+                      </div>
+                      <div
+                        class="ml-3 text-sm"
+                      >
+                        <label
+                          class="text-gray-500 dark:text-gray-300"
+                          for="remember"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <a
+                      class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      href="/forgot"
+                    >
+                      Forgot password?
+                    </a>
+                  </div>
+                  <button
+                    class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    data-testid="btnSubmit"
+                    type="submit"
+                  >
+                    Sign in
+                  </button>
+                  <p
+                    class="text-sm font-light text-gray-500 dark:text-gray-400"
+                  >
+                    Don't have an account yet? 
+                    <a
+                      class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      href="/register"
+                    >
+                      Sign up
+                    </a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

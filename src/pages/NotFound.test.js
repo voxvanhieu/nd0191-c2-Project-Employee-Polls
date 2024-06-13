@@ -2,8 +2,8 @@ import React from 'react';
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { render } from '@testing-library/react';
-import App from './App';
 import { store } from '../data/store';
+import { NotFound } from './NotFound';
 
 describe('App snapshot test', () => {
   it('will match snapshot', () => {
@@ -11,7 +11,7 @@ describe('App snapshot test', () => {
       <React.StrictMode>
         <Provider store={store}>
           <BrowserRouter>
-            <App />
+            <NotFound />
           </BrowserRouter>
         </Provider>
       </React.StrictMode>
