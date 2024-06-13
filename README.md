@@ -98,7 +98,7 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 
 ## Notes
 
-```
+```sh
 npx create-react-app employee-polls
 cd employee-polls
 npm i @reduxjs/toolkit react-router-dom react-hook-form react-redux react-redux-loading-bar yup @hookform/resolvers
@@ -106,7 +106,7 @@ npm i @reduxjs/toolkit react-router-dom react-hook-form react-redux react-redux-
 
 Install NextUI
 
-```
+```sh
 npm i @nextui-org/react framer-motion
 npm i -D tailwindcss
 npx tailwindcss init
@@ -114,12 +114,62 @@ npx tailwindcss init
 
 ESLint
 
-```
+```sh
 npm install -g eslint
 ```
 
 Other package
 
-```
+```sh
 npm i @react-stately/data
 ```
+
+## Screenshot
+
+### Login Page
+
+[Login](./imgs/01-Login.png)
+
+### Alert
+
+[image](./imgs/02-Alert.png)
+
+### Home
+
+[image](./imgs/03-Home.png)
+
+### Add
+
+[image](./imgs/04-Add.png)
+
+### Add result
+
+[image](./imgs/05-Add.png)
+
+### Tooltip
+
+[image](./imgs/06-Tooltip.png)
+
+### Detail
+
+[image](./imgs/07-Detail-voted.png)
+
+### detail
+
+[image](./imgs/08-detail-unvoted.png)
+
+### After
+
+[image](./imgs/09-After-voted.png)
+
+### leaderboard
+
+[image](./imgs/10-leaderboard.png)
+
+### 404
+
+[image](./imgs/11-404.png)
+
+### Test result
+
+[image](./imgs/12-test-result.png)
