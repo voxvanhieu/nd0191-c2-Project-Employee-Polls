@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export { PollOption };
 
-function PollOption({ pollId, name, option, canBeVoted }) {
+function PollOption({ pollId, name, option, canBeVoted, isHighlight }) {
 
     const dispatch = useDispatch();
     const auth = useSelector(authSelectors.selectValue);
@@ -22,18 +22,15 @@ function PollOption({ pollId, name, option, canBeVoted }) {
 
     return (
         <Card fullWidth isPressable onPress={canBeVoted ? handleClick : null}>
-            <CardHeader className="flex gap-3">
-                <Image
-                    alt="nextui logo"
-                    height={40}
-                    radius="sm"
-                    src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                    width={40}
-                />
+            <CardHeader className="flex gap-3 justify-between">
                 <div className="flex flex-col items-start">
                     <p className="text-md">{name.full}</p>
                     <p className="text-small italic text-default-500">{canBeVoted ? "Click this card to vote." : "Already voted this poll."}</p>
                 </div>
+
+                {isHighlight
+                    ? <Chip color="success" variant="shadow">Voted</Chip>
+                    : null}
             </CardHeader>
             <Divider />
             <CardBody>

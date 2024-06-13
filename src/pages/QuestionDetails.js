@@ -16,7 +16,10 @@ function QuestionDetails() {
     const currUser = useSelector(authSelectors.selectValue);
     const question = useSelector(pollSelectors.selectQuestionById(pollId));
     const author = useSelector(userSelectors.selectUserInfoById(question.author));
-    const isVoted = [...question.optionOne.votes, ...question.optionTwo.votes].includes(currUser.id);
+
+    const isVotedFor1 = question.optionOne.votes.includes(currUser.id);
+    const isVotedFor2 = question.optionTwo.votes.includes(currUser.id);
+    const isVoted = isVotedFor1 || isVotedFor2;
 
     return (
         <Container>
@@ -24,7 +27,7 @@ function QuestionDetails() {
 
             <div className="flex flex-col justify-center items-center py-5">
                 <Avatar isBordered color="success" size="lg" src={author.avatarURL} />
-                <h3 className="text-3xl font-semibold mt-5 bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent uppercase">Which one would you rather?</h3>
+                <h3 className="text-3xl font-semibold mt-5 bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent uppercase">Would You Rather</h3>
                 <p className="font-semibold text-default-400 text-small">{(new Date(question.timestamp).toLocaleString())}</p>
             </div>
 
@@ -34,6 +37,7 @@ function QuestionDetails() {
                         pollId={pollId}
                         option={question.optionOne}
                         canBeVoted={!isVoted}
+                        isHighlight={isVotedFor1}
                         name={{ full: "Option One", short: "optionOne" }} />
                 </div>
 
@@ -42,6 +46,7 @@ function QuestionDetails() {
                         pollId={pollId}
                         option={question.optionTwo}
                         canBeVoted={!isVoted}
+                        isHighlight={isVotedFor2}
                         name={{ full: "Option Two", short: "optionTwo" }} />
                 </div>
             </div>
