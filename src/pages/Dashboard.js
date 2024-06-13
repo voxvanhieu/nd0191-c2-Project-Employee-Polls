@@ -11,12 +11,14 @@ function Dashboard() {
     const currUser = useSelector(authSelectors.selectValue);
     const allPolls = useSelector(pollSelectors.selectValue);
 
-    const donePollIds = Object.values(allPolls)
+    const allPollsObj = Object.values(allPolls).sort((a, b) => b.timestamp - a.timestamp);
+    const donePollIds = allPollsObj
         .filter((item, index) => [...item.optionOne.votes, ...item.optionTwo.votes].includes(currUser.id))
         .map((item) => item.id);
 
-    const newPollIds = Object.keys(allPolls)
-        .filter((item, index) => !donePollIds.includes(item));
+    const newPollIds = allPollsObj
+        .filter((item, index) => !donePollIds.includes(item.id))
+        .map((item) => item.id);
 
     return (
         <Container>
