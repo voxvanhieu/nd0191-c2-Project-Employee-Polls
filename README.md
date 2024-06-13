@@ -162,9 +162,13 @@ npm i @react-stately/data
 
 ![image](./imgs/09-After-voted.png)
 
-### leaderboard
+### Leaderboard
 
 ![image](./imgs/10-leaderboard.png)
+
+### Logout
+
+![image](./imgs/13-logout.png)
 
 ### 404
 
