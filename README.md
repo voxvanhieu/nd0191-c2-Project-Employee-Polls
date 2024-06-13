@@ -128,48 +128,48 @@ npm i @react-stately/data
 
 ### Login Page
 
-[Login](./imgs/01-Login.png)
+![Login](./imgs/01-Login.png)
 
 ### Alert
 
-[image](./imgs/02-Alert.png)
+![image](./imgs/02-Alert.png)
 
 ### Home
 
-[image](./imgs/03-Home.png)
+![image](./imgs/03-Home.png)
 
 ### Add
 
-[image](./imgs/04-Add.png)
+![image](./imgs/04-Add.png)
 
 ### Add result
 
-[image](./imgs/05-Add.png)
+![image](./imgs/05-Add.png)
 
 ### Tooltip
 
-[image](./imgs/06-Tooltip.png)
+![image](./imgs/06-Tooltip.png)
 
 ### Detail
 
-[image](./imgs/07-Detail-voted.png)
+![image](./imgs/07-Detail-voted.png)
 
 ### detail
 
-[image](./imgs/08-detail-unvoted.png)
+![image](./imgs/08-detail-unvoted.png)
 
 ### After
 
-[image](./imgs/09-After-voted.png)
+![image](./imgs/09-After-voted.png)
 
 ### leaderboard
 
-[image](./imgs/10-leaderboard.png)
+![image](./imgs/10-leaderboard.png)
 
 ### 404
 
-[image](./imgs/11-404.png)
+![image](./imgs/11-404.png)
 
 ### Test result
 
-[image](./imgs/12-test-result.png)
+![image](./imgs/12-test-result.png)
