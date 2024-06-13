@@ -59,8 +59,8 @@ const App = (props) => {
               element={(<QuestionDetails />)}
             />
             <Route path="/add" element={<NewPoll />} />
+            <Route path="/about" element={<About />} />
           </Route>
-          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
