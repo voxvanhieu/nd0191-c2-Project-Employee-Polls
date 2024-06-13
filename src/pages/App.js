@@ -25,6 +25,7 @@ import { TestPage } from "./TestPage";
 import { About } from "./About";
 import { Leaderboard } from "./Leaderboard";
 import { QuestionDetails } from "./QuestionDetails";
+import { NewPoll } from "./NewPoll";
 
 const App = (props) => {
 
@@ -40,8 +41,8 @@ const App = (props) => {
     if (!auth) {
       return;
     }
-    dispatch(pollActions.getQuestions());
     dispatch(userActions.getUsers());
+    dispatch(pollActions.getQuestions());
   }, [auth, dispatch]);
 
   return (
@@ -59,10 +60,7 @@ const App = (props) => {
               path="/questions/:question"
               element={(<QuestionDetails />)}
             />
-            {/*
             <Route path="/add" element={<NewPoll />} />
-            <Route path="/questions/:id" element={<Poll />} />
-            */}
           </Route>
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />

@@ -9,11 +9,14 @@ export { Dashboard }
 
 function Dashboard() {
     const currUser = useSelector(authSelectors.selectValue);
-    const currUserVotedPolls = useSelector(userSelectors.selectCompletedPolls(currUser.id)) ?? {};
-    const currUserVotedPollIds = Object.keys(currUserVotedPolls);
+    const allPolls = useSelector(pollSelectors.selectValue);
 
-    const newPollIds = useSelector(pollSelectors.selectQuestionIdsExcepts(currUserVotedPollIds));
-    const donePollIds = useSelector(pollSelectors.selectQuestionIds(currUserVotedPollIds));
+    const donePollIds = Object.values(allPolls)
+        .filter((item, index) => [...item.optionOne.votes, ...item.optionTwo.votes].includes(currUser.id))
+        .map((item) => item.id);
+
+    const newPollIds = Object.keys(allPolls)
+        .filter((item, index) => !donePollIds.includes(item));
 
     return (
         <Container>

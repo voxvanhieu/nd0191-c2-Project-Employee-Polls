@@ -7,11 +7,10 @@ import {
     Listbox,
     ListboxItem,
     Avatar,
-    Button,
     Chip,
     Tooltip
 } from "@nextui-org/react";
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { authSelectors, pollSelectors, userActions, userSelectors } from '../data/store';
 import { useNavigate, generatePath } from "react-router-dom";
 
@@ -20,13 +19,14 @@ export { PollCard };
 function PollCard({ item }) {
 
     const currUser = useSelector(authSelectors.selectValue);
-    const votedPolls = useSelector(userSelectors.selectCompletedPolls(currUser.id)) ?? {};
-
-    const isVoted = item in votedPolls;
-    const optSelected = votedPolls[item];
-
     const question = useSelector(pollSelectors.selectQuestionById(item));
-    const author = useSelector(userSelectors.selectUserInfoById(question.author))
+    const author = useSelector(userSelectors.selectUserInfoById(question.author));
+
+    const isVoted = [...question.optionOne.votes, ...question.optionTwo.votes].includes(currUser.id);
+    const optSelected = isVoted
+        ? question.optionOne.votes.includes(currUser.id)
+            ? "optionOne" : "optionTwo"
+        : null;
 
     const navigate = useNavigate();
     const handleClick = () => navigate(

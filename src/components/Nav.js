@@ -54,8 +54,8 @@ function Nav() {
                         Leaderboard
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive={isActiveThisMenu("/new")}>
-                    <Link color="foreground" href="/new">
+                <NavbarItem isActive={isActiveThisMenu("/add")}>
+                    <Link color="foreground" href="/add">
                         New
                     </Link>
                 </NavbarItem>

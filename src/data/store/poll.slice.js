@@ -72,12 +72,26 @@ function createExtraActions() {
             `${name}/getQuestions`,
             async () => await API._getQuestions()
         ),
+        storeAnswer: createAsyncThunk(
+            `${name}/storeAnswer`,
+            async (args) => (await API.saveQuestionAnswer({
+                authedUser: args.userId,
+                qid: args.questionId,
+                answer: args.answer,
+            }))
+        ),
+        storeQuestion: createAsyncThunk(
+            `${name}/storeQuestion`,
+            async (args) => await API.saveQuestion(args)
+        ),
     }
 }
 
 function createExtraReducers() {
     return (builder) => {
         buildReducerGetQuestions();
+        buildReducerStoreAnswer();
+        buildReducerStoreQuestion();
 
         function buildReducerGetQuestions() {
             var { pending, fulfilled, rejected } = extraActions.getQuestions;
@@ -90,6 +104,54 @@ function createExtraReducers() {
                     state.allIds = Object.keys(state.byId);
                     state.status = { loading: false };
                 })
+                .addCase(rejected, (state, action) => {
+                    state.status = { error: action.error };
+                })
+        }
+
+        function buildReducerStoreAnswer() {
+            var { pending, fulfilled, rejected } = extraActions.storeAnswer;
+            builder
+                .addCase(pending, (state) => {
+                    state.status = { loading: true };
+                })
+                .addCase(fulfilled, (state, action) => ({
+                    ...state,
+                    byId: {
+                        ...state.byId,
+                        [action.meta.arg.questionId]: {
+                            ...state.byId[action.meta.arg.questionId],
+                            [action.meta.arg.answer]: {
+                                ...state.byId[action.meta.arg.questionId][action.meta.arg.answer],
+                                votes: [
+                                    ...state.byId[action.meta.arg.questionId][action.meta.arg.answer].votes,
+                                    action.meta.arg.userId,
+                                ]
+                            },
+                        }
+                    }
+                }))
+                .addCase(rejected, (state, action) => {
+                    state.status = { error: action.error };
+                })
+        }
+
+        function buildReducerStoreQuestion() {
+            var { pending, fulfilled, rejected } = extraActions.storeQuestion;
+            builder
+                .addCase(pending, (state) => {
+                    state.status = { loading: true };
+                })
+                .addCase(fulfilled, (state, action) => ({
+                    ...state,
+                    byId: {
+                        ...state.byId,
+                        [action.payload.id]: {
+                            ...action.payload,
+                        },
+                    },
+                    allIds: [action.payload.id, ...state.allIds],
+                }))
                 .addCase(rejected, (state, action) => {
                     state.status = { error: action.error };
                 })
