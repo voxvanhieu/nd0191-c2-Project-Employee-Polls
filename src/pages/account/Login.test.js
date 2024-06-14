@@ -22,7 +22,6 @@ describe("Login page test", () => {
         expect(view).toMatchSnapshot();
     })
 
-
     it("should rendder all elements and fire events", () => {
         const view = render(
             <React.StrictMode>

@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot test will match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container mx-auto min-h-svh mt-8"
+      >
+        <nav
+          class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70"
+          style="--navbar-height: 4rem;"
+        >
+          <header
+            class="z-40 flex px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]"
+          >
+            <div
+              class="flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border"
+            >
+              <p
+                class="font-bold text-inherit"
+              >
+                Employee Polls
+              </p>
+            </div>
+            <ul
+              class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex gap-4"
+              data-justify="center"
+            >
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+                data-active="true"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/"
+                  role="link"
+                  tabindex="0"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/leaderboard"
+                  role="link"
+                  tabindex="0"
+                >
+                  Leaderboard
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/add"
+                  role="link"
+                  tabindex="0"
+                >
+                  New
+                </a>
+              </li>
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                  href="/about"
+                  role="link"
+                  tabindex="0"
+                >
+                  About
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0"
+              data-justify="end"
+            >
+              <li
+                class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              >
+                <a
+                  class="tap-highlight-transparent no-underline hover:opacity-80 active:opacity-disabled transition-opacity z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-primary/20 text-primary data-[hover=true]:opacity-hover"
+                  href="/login"
+                  role="button"
+                  tabindex="0"
+                >
+                  Login
+                </a>
+              </li>
+            </ul>
+          </header>
+        </nav>
+        <div
+          class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
+          shadow="sm"
+        >
+          <h2
+            class="font-semibold text-xl text-foreground/90 w-full text-center"
+            data-testid="lblBanner"
+          >
+            This is a sample text for testing
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container mx-auto min-h-svh mt-8"
+    >
+      <nav
+        class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70"
+        style="--navbar-height: 4rem;"
+      >
+        <header
+          class="z-40 flex px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between h-[var(--navbar-height)] max-w-[1024px]"
+        >
+          <div
+            class="flex basis-0 flex-row flex-grow flex-nowrap justify-start bg-transparent items-center no-underline text-medium whitespace-nowrap box-border"
+          >
+            <p
+              class="font-bold text-inherit"
+            >
+              Employee Polls
+            </p>
+          </div>
+          <ul
+            class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex gap-4"
+            data-justify="center"
+          >
+            <li
+              class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+              data-active="true"
+            >
+              <a
+                class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                href="/"
+                role="link"
+                tabindex="0"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+            >
+              <a
+                class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                href="/leaderboard"
+                role="link"
+                tabindex="0"
+              >
+                Leaderboard
+              </a>
+            </li>
+            <li
+              class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+            >
+              <a
+                class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                href="/add"
+                role="link"
+                tabindex="0"
+              >
+                New
+              </a>
+            </li>
+            <li
+              class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+            >
+              <a
+                class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+                href="/about"
+                role="link"
+                tabindex="0"
+              >
+                About
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0"
+            data-justify="end"
+          >
+            <li
+              class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold flex relative h-full items-center data-[active=true]:after:content-[''] data-[active=true]:after:absolute data-[active=true]:after:bottom-0 data-[active=true]:after:left-0 data-[active=true]:after:right-0 data-[active=true]:after:h-[2px] data-[active=true]:after:rounded-[2px] data-[active=true]:after:bg-primary"
+            >
+              <a
+                class="tap-highlight-transparent no-underline hover:opacity-80 active:opacity-disabled transition-opacity z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-primary/20 text-primary data-[hover=true]:opacity-hover"
+                href="/login"
+                role="button"
+                tabindex="0"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </header>
+      </nav>
+      <div
+        class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
+        shadow="sm"
+      >
+        <h2
+          class="font-semibold text-xl text-foreground/90 w-full text-center"
+          data-testid="lblBanner"
+        >
+          This is a sample text for testing
+        </h2>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

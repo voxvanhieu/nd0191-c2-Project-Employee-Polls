@@ -179,7 +179,7 @@ export function _saveQuestion(question) {
         [formattedQuestion.author]: {
           ...users[formattedQuestion.author],
           questions: [
-            ...users[formattedQuestion.author].questions,
+            ...users[formattedQuestion.author]?.questions ?? [],
             formattedQuestion.id
           ]
         }

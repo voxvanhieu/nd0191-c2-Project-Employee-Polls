@@ -9,11 +9,169 @@ Object {
         class="container mx-auto min-h-svh mt-8"
       >
         <div
+          aria-label="Options"
+          class="inline-flex"
+          data-slot="base"
+        >
+          <div
+            aria-label="Options"
+            aria-orientation="horizontal"
+            class="flex p-1 h-fit gap-2 items-center flex-nowrap overflow-x-scroll scrollbar-hide bg-default-100 rounded-medium"
+            data-slot="tabList"
+            id="react-aria-:r3:"
+            role="tablist"
+          >
+            <button
+              aria-controls="react-aria-:r3:-tabpanel-new-questions"
+              aria-selected="true"
+              class="z-0 w-full px-3 py-1 flex group relative justify-center items-center cursor-pointer transition-opacity tap-highlight-transparent data-[disabled=true]:cursor-not-allowed data-[disabled=true]:opacity-30 data-[hover-unselected=true]:opacity-disabled outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 h-8 text-small rounded-small"
+              data-key="new-questions"
+              data-selected="true"
+              data-slot="tab"
+              id="react-aria-:r3:-tab-new-questions"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="absolute z-0 inset-0 rounded-small bg-background dark:bg-default shadow-small"
+                data-slot="cursor"
+              />
+              <div
+                class="relative z-10 whitespace-nowrap transition-colors text-default-500 group-data-[selected=true]:text-default-foreground"
+                data-slot="tabContent"
+              >
+                New Questions
+              </div>
+            </button>
+            <button
+              aria-selected="false"
+              class="z-0 w-full px-3 py-1 flex group relative justify-center items-center cursor-pointer transition-opacity tap-highlight-transparent data-[disabled=true]:cursor-not-allowed data-[disabled=true]:opacity-30 data-[hover-unselected=true]:opacity-disabled outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 h-8 text-small rounded-small"
+              data-key="done-questions"
+              data-slot="tab"
+              id="react-aria-:r3:-tab-done-questions"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <div
+                class="relative z-10 whitespace-nowrap transition-colors text-default-500 group-data-[selected=true]:text-default-foreground"
+                data-slot="tabContent"
+              >
+                Completed
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          aria-labelledby="react-aria-:r3:-tab-new-questions"
+          class="py-3 px-1 data-[inert=true]:hidden outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+          data-focus="false"
+          data-focus-visible="false"
+          data-slot="panel"
+          id="react-aria-:r3:-tabpanel-null"
+          role="tabpanel"
+          tabindex="0"
+        >
+          <div
+            class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
+            shadow="sm"
+          >
+            <h2
+              class="font-semibold text-xl text-foreground/90 w-full text-center"
+              data-testid="lblBanner"
+            >
+              New Questions
+            </h2>
+          </div>
+          <div
+            class="w-full text-center"
+          >
+            <h3>
+              No data
+            </h3>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container mx-auto min-h-svh mt-8"
+    >
+      <div
+        aria-label="Options"
+        class="inline-flex"
+        data-slot="base"
+      >
+        <div
+          aria-label="Options"
+          aria-orientation="horizontal"
+          class="flex p-1 h-fit gap-2 items-center flex-nowrap overflow-x-scroll scrollbar-hide bg-default-100 rounded-medium"
+          data-slot="tabList"
+          id="react-aria-:r3:"
+          role="tablist"
+        >
+          <button
+            aria-controls="react-aria-:r3:-tabpanel-new-questions"
+            aria-selected="true"
+            class="z-0 w-full px-3 py-1 flex group relative justify-center items-center cursor-pointer transition-opacity tap-highlight-transparent data-[disabled=true]:cursor-not-allowed data-[disabled=true]:opacity-30 data-[hover-unselected=true]:opacity-disabled outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 h-8 text-small rounded-small"
+            data-key="new-questions"
+            data-selected="true"
+            data-slot="tab"
+            id="react-aria-:r3:-tab-new-questions"
+            role="tab"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="absolute z-0 inset-0 rounded-small bg-background dark:bg-default shadow-small"
+              data-slot="cursor"
+            />
+            <div
+              class="relative z-10 whitespace-nowrap transition-colors text-default-500 group-data-[selected=true]:text-default-foreground"
+              data-slot="tabContent"
+            >
+              New Questions
+            </div>
+          </button>
+          <button
+            aria-selected="false"
+            class="z-0 w-full px-3 py-1 flex group relative justify-center items-center cursor-pointer transition-opacity tap-highlight-transparent data-[disabled=true]:cursor-not-allowed data-[disabled=true]:opacity-30 data-[hover-unselected=true]:opacity-disabled outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 h-8 text-small rounded-small"
+            data-key="done-questions"
+            data-slot="tab"
+            id="react-aria-:r3:-tab-done-questions"
+            role="tab"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="relative z-10 whitespace-nowrap transition-colors text-default-500 group-data-[selected=true]:text-default-foreground"
+              data-slot="tabContent"
+            >
+              Completed
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-aria-:r3:-tab-new-questions"
+        class="py-3 px-1 data-[inert=true]:hidden outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+        data-focus="false"
+        data-focus-visible="false"
+        data-slot="panel"
+        id="react-aria-:r3:-tabpanel-null"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <div
           class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
           shadow="sm"
         >
           <h2
             class="font-semibold text-xl text-foreground/90 w-full text-center"
+            data-testid="lblBanner"
           >
             New Questions
           </h2>
@@ -26,71 +184,7 @@ Object {
           </h3>
         </div>
         <br />
-        <br />
-        <br />
-        <div
-          class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
-          shadow="sm"
-        >
-          <h2
-            class="font-semibold text-xl text-foreground/90 w-full text-center"
-          >
-            Completed
-          </h2>
-        </div>
-        <div
-          class="w-full text-center"
-        >
-          <h3>
-            No data
-          </h3>
-        </div>
-        <br />
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="container mx-auto min-h-svh mt-8"
-    >
-      <div
-        class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
-        shadow="sm"
-      >
-        <h2
-          class="font-semibold text-xl text-foreground/90 w-full text-center"
-        >
-          New Questions
-        </h2>
-      </div>
-      <div
-        class="w-full text-center"
-      >
-        <h3>
-          No data
-        </h3>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div
-        class="relative overflow-hidden flex items-center border border-default-200 dark:border-default-100 px-2 py-4 rounded-lg bg-gradient-to-r bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-center mb-5"
-        shadow="sm"
-      >
-        <h2
-          class="font-semibold text-xl text-foreground/90 w-full text-center"
-        >
-          Completed
-        </h2>
-      </div>
-      <div
-        class="w-full text-center"
-      >
-        <h3>
-          No data
-        </h3>
-      </div>
-      <br />
     </div>
   </div>,
   "debug": [Function],
