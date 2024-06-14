@@ -1,7 +1,7 @@
 
 import { Card, CardBody, CardFooter, CardHeader, Chip, Divider, Image, Link } from '@nextui-org/react';
 import { useDispatch, useSelector } from 'react-redux';
-import { authSelectors, pollActions } from '../data/store';
+import { authSelectors, pollActions, userActions } from '../data/store';
 import { useNavigate } from 'react-router-dom';
 import { divideRound2 } from '../helpers';
 
@@ -40,7 +40,7 @@ function PollOption({ pollId, name, option, canBeVoted, isHighlight, totalVoted 
             <Divider />
             <CardFooter>
                 <div className="w-full flex flex-row justify-between">
-                    <div className="text-default-500 italic"><Chip color="secondary" variant="shadow" size="sm">{divideRound2(option.votes.length, totalVoted) * 100}%</Chip></div>
+                    <div className="text-default-500 italic"><Chip color="secondary" variant="shadow" size="sm">{totalVoted ? divideRound2(option.votes.length, totalVoted) * 100 : 0}%</Chip></div>
                     <div className="text-default-500 italic">Total <Chip color="secondary" variant="shadow" size="sm">{option.votes.length}</Chip> votes(s)</div>
                 </div>
             </CardFooter>
