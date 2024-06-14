@@ -14,11 +14,17 @@ function PollOption({ pollId, name, option, canBeVoted, isHighlight, totalVoted 
     const navigate = useNavigate();
 
     const handleClick = (event) => {
-        dispatch(pollActions.storeAnswer({
+        const answerObj = {
             userId: auth.id,
             questionId: pollId,
             answer: name.short
-        })).finally(() => navigate("/"));
+        }
+
+        dispatch(pollActions.storeAnswer(answerObj))
+            .then(() => {
+                dispatch(userActions.getUsers());
+            })
+            .finally(() => navigate("/"));
     }
 
     return (

@@ -3,7 +3,7 @@ import { Banner } from '../components/Banner';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Container } from '../components/Container';
 import { useDispatch, useSelector } from 'react-redux';
-import { authSelectors, pollActions, pollSelectors, userSelectors } from '../data/store';
+import { authSelectors, pollActions, pollSelectors, userActions, userSelectors } from '../data/store';
 import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Divider, Textarea } from '@nextui-org/react';
 
 export function NewPoll() {
@@ -26,7 +26,11 @@ export function NewPoll() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        dispatch(pollActions.storeQuestion(formData)).then(() => { navigate("/"); });
+        dispatch(pollActions.storeQuestion(formData))
+            .then(() => {
+                dispatch(userActions.getUsers());
+            })
+            .finally(() => { navigate("/"); });
     };
 
     return (
