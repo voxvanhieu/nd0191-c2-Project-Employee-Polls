@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { authSelectors, pollSelectors, userSelectors } from '../data/store';
 import { Avatar } from '@nextui-org/react';
 import { PollOption } from '../components/PollOption';
+import { NotFound } from './NotFound';
 
 export { QuestionDetails };
 
@@ -14,8 +15,18 @@ function QuestionDetails() {
     const { question: pollId } = useParams();
 
     const currUser = useSelector(authSelectors.selectValue);
-    const question = useSelector(pollSelectors.selectQuestionById(pollId));
-    const author = useSelector(userSelectors.selectUserInfoById(question.author));
+    const questions = useSelector(pollSelectors.selectValue);
+    const users = useSelector(userSelectors.selectValue);
+
+    // const question = useSelector(pollSelectors.selectQuestionById(pollId));
+    // const author = useSelector(userSelectors.selectUserInfoById(question.author));
+
+    const question = questions[pollId];
+    if (!question) {
+        return (<NotFound />);
+    }
+
+    const author = users[question.author];
 
     const isVotedFor1 = question.optionOne.votes.includes(currUser.id);
     const isVotedFor2 = question.optionTwo.votes.includes(currUser.id);
