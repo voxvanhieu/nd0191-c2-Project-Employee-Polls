@@ -64,9 +64,8 @@ function createExtraActions() {
                     if (user && user.name) {
                         dispatch(alertActions.success("Welcome"));
                         setTimeout(() => {
-                            // const { from } = history.location.state || { from: { pathname: '/' } };
-                            // history.navigate(from);
-                            window.location.href = "/";
+                            const { from } = history.location.state || { from: { pathname: '/' } };
+                            history.navigate(from);
                         }, 500);
                     } else {
                         dispatch(alertActions.error("Wrong username or password"));

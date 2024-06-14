@@ -37,9 +37,6 @@ const App = (props) => {
   const auth = useSelector(authSelectors.selectValue);
 
   useEffect(() => {
-    if (!auth) {
-      return;
-    }
     dispatch(userActions.getUsers());
     dispatch(pollActions.getQuestions());
   }, [auth, dispatch]);
