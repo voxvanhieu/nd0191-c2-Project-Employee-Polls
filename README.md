@@ -1,12 +1,61 @@
 # Employee Polls Project
 
-This is the starter code for the final assessment project for Udacity's React & Redux course.
+In the final exercise of Udacity’s React Nanodegree, students build an interactive voting portal. Users can log in, post new polls, and vote on existing ones. The intuitive interface allows easy navigation between polls.
 
-The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the ` _DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
+## Run the project
 
-Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the [Create React App](https://github.com/facebook/create-react-app) to bootstrap the project.
+To run the project, you can follow these steps:
+
+1. Clone or download the project to local repoitory
+2. Make sure you node.js environment has been installed
+3. Open terminal at the root of repository
+4. Run command: `npm install` in order to install all the project's dependencies
+5. Run command: `npm start` to start project. Press `F5` in VSCode to start the debug session
+6. Run command: `npm test` to start the Unit Test process
+
+## Setup project
+
+### Clone the starter code project
+
+Clone this [Starter code](https://github.com/udacity/nd0191-c2-React-Redux-project-starter). Basically, this code is initialized by the [Create React App](https://github.com/facebook/create-react-app) to bootstrap the project
+
+### Command
+
+```sh
+npx create-react-app employee-polls
+cd employee-polls
+npm i @reduxjs/toolkit react-router-dom react-hook-form react-redux react-redux-loading-bar yup @hookform/resolvers
+```
+
+Install NextUI
+
+```sh
+npm i @nextui-org/react framer-motion
+npm i -D tailwindcss
+npx tailwindcss init
+```
+
+ESLint
+
+```sh
+npm i -g eslint
+```
+
+Jest
+
+```sh
+npm i --save-dev jest
+```
+
+Other package
+
+```sh
+npm i @react-stately/data
+```
 
 ## Data
+
+The `_DATA.js` file represents a fake database and methods that let you access the data.
 
 There are two types of objects stored in our database:
 
@@ -96,35 +145,8 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 | qid        | String | The id of the question that was answered                                                |
 | answer     | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"` |
 
-## Notes
 
-```sh
-npx create-react-app employee-polls
-cd employee-polls
-npm i @reduxjs/toolkit react-router-dom react-hook-form react-redux react-redux-loading-bar yup @hookform/resolvers
-```
-
-Install NextUI
-
-```sh
-npm i @nextui-org/react framer-motion
-npm i -D tailwindcss
-npx tailwindcss init
-```
-
-ESLint
-
-```sh
-npm install -g eslint
-```
-
-Other package
-
-```sh
-npm i @react-stately/data
-```
-
-## Screenshot
+## Screenshots
 
 ### Login Page
 
@@ -150,15 +172,15 @@ npm i @react-stately/data
 
 ![image](./imgs/06-Tooltip.png)
 
-### Detail
+### Detail voted
 
 ![image](./imgs/07-Detail-voted.png)
 
-### detail
+### detail unvoted
 
 ![image](./imgs/08-detail-unvoted.png)
 
-### After
+### After voted
 
 ![image](./imgs/09-After-voted.png)
 
