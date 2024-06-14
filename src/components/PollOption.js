@@ -3,10 +3,11 @@ import { Card, CardBody, CardFooter, CardHeader, Chip, Divider, Image, Link } fr
 import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, pollActions } from '../data/store';
 import { useNavigate } from 'react-router-dom';
+import { divideRound2 } from '../helpers';
 
 export { PollOption };
 
-function PollOption({ pollId, name, option, canBeVoted, isHighlight }) {
+function PollOption({ pollId, name, option, canBeVoted, isHighlight, totalVoted }) {
 
     const dispatch = useDispatch();
     const auth = useSelector(authSelectors.selectValue);
@@ -29,7 +30,7 @@ function PollOption({ pollId, name, option, canBeVoted, isHighlight }) {
                 </div>
 
                 {isHighlight
-                    ? <Chip color="success" variant="shadow">Voted</Chip>
+                    ? <Chip color="success" variant="shadow">You Voted</Chip>
                     : null}
             </CardHeader>
             <Divider />
@@ -38,7 +39,10 @@ function PollOption({ pollId, name, option, canBeVoted, isHighlight }) {
             </CardBody>
             <Divider />
             <CardFooter>
-                <p className="text-default-500 italic">Total <Chip color="secondary" variant="shadow" size="sm">{option.votes.length}</Chip> votes(s).</p>
+                <div className="w-full flex flex-row justify-between">
+                    <div className="text-default-500 italic"><Chip color="secondary" variant="shadow" size="sm">{divideRound2(option.votes.length, totalVoted) * 100}%</Chip></div>
+                    <div className="text-default-500 italic">Total <Chip color="secondary" variant="shadow" size="sm">{option.votes.length}</Chip> votes(s)</div>
+                </div>
             </CardFooter>
         </Card>
     );

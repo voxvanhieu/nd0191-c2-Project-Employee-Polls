@@ -27,7 +27,7 @@ function QuestionDetails() {
     }
 
     const author = users[question.author];
-
+    const totalVoted = question.optionOne.votes.length + question.optionTwo.votes.length;
     const isVotedFor1 = question.optionOne.votes.includes(currUser.id);
     const isVotedFor2 = question.optionTwo.votes.includes(currUser.id);
     const isVoted = isVotedFor1 || isVotedFor2;
@@ -49,6 +49,7 @@ function QuestionDetails() {
                         option={question.optionOne}
                         canBeVoted={!isVoted}
                         isHighlight={isVotedFor1}
+                        totalVoted={totalVoted}
                         name={{ full: "Option One", short: "optionOne" }} />
                 </div>
 
@@ -58,6 +59,7 @@ function QuestionDetails() {
                         option={question.optionTwo}
                         canBeVoted={!isVoted}
                         isHighlight={isVotedFor2}
+                        totalVoted={totalVoted}
                         name={{ full: "Option Two", short: "optionTwo" }} />
                 </div>
             </div>
