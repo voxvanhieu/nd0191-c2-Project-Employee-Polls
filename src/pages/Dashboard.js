@@ -4,6 +4,7 @@ import { PollGroup } from "../components";
 import { useSelector } from "react-redux";
 import { authSelectors, pollSelectors, userSelectors } from "../data/store";
 import { Container } from "../components/Container";
+import { Tab, Tabs } from "@nextui-org/react";
 
 export { Dashboard }
 
@@ -22,16 +23,19 @@ function Dashboard() {
 
     return (
         <Container>
-            <PollGroup
-                name="New Questions"
-                items={newPollIds} />
+            <Tabs aria-label="Options">
+                <Tab key="new-questions" title="New Questions">
+                    <PollGroup
+                        name="New Questions"
+                        items={newPollIds} />
+                </Tab>
+                <Tab key="done-questions" title="Completed">
+                    <PollGroup
+                        name="Completed"
+                        items={donePollIds} />
+                </Tab>
+            </Tabs>
 
-            <br />
-            <br />
-
-            <PollGroup
-                name="Completed"
-                items={donePollIds} />
         </Container>
     );
 }
